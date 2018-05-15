@@ -18,3 +18,5 @@ destroy terraform template
 
 
 ### Terraform Module structure
+
+![terraform moudules structure ](https://github.com/Kasunmadura/terraform/blob/master/images/modules.png)
