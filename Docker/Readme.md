@@ -15,3 +15,6 @@ taint and untaint moudule
 destroy terraform template
 
     terraform destroy
+
+
+### Terraform Module structure

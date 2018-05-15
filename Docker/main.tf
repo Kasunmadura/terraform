@@ -1,14 +1,14 @@
 # Download Ghost Image
 resource "docker_image" "image_id"{
-  name = "ghost:latest"
+  name = "${var.image}"
 }
 
 # Start the Container
 resource "docker_container" "container_id" {
-  name  = "blog"
+  name  = "${var.container_name}"
   image = "${docker_image.image_id.latest}"
   ports {
-    internal = "2368"
-    external = "80"
+    internal = "${var.int_port}"
+    external = "${var.ext_port}"
   }
 }
