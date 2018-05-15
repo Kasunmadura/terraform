@@ -24,3 +24,13 @@
 
     brew update
     brew install terraform
+
+
+
+### Terraform Module structure
+
+Up to this point, we've been configuring Terraform by editing Terraform configurations directly. As our infrastructure grows, this practice has a few key problems: a lack of organization, a lack of reusability, and difficulties in management for teams.
+
+Modules in Terraform are self-contained packages of Terraform configurations that are managed as a group. Modules are used to create reusable components, improve organization, and to treat pieces of infrastructure as a black box.
+
+![terraform moudules structure ](https://github.com/Kasunmadura/terraform/blob/master/images/modules.png)
