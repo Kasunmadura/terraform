@@ -1,4 +1,4 @@
-## Introduction to Terrafrom
+## Introduction to Terraform
 
 1. Allow simple version control
 2. Support many servers providers (AWS,openstack,GCP..etc)
