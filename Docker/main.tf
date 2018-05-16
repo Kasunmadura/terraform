@@ -1,14 +1,15 @@
 # Download Ghost Image
-resource "docker_image" "image_id"{
-  name = "${var.image}"
-}
+module "image" {
+  source = "./image"
+  image  = "${lookup(var.image, var.env)}"
+  }
 
 # Start the Container
-resource "docker_container" "container_id" {
-  name  = "${var.container_name}"
-  image = "${docker_image.image_id.latest}"
-  ports {
-    internal = "${var.int_port}"
-    external = "${var.ext_port}"
-  }
+
+module "container"{
+  source = "./container"
+  image  = "${module.image.image_out}"
+  name   = "${lookup(var.container_name, var.env)}"
+  int_port = "${lookup(var.int_port, var.env)}"
+  ext_port = "${lookup(var.ext_port, var.env)}"
 }

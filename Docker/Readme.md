@@ -16,7 +16,7 @@ destroy terraform template
 
     terraform destroy
 
+### setup env variable to run terraform
 
-### Terraform Module structure
-
-![terraform moudules structure ](https://github.com/Kasunmadura/terraform/blob/master/images/modules.png)
+    export TF_VAR_env=dev
+    unset TF_VAR_env
