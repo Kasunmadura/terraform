@@ -2,6 +2,14 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "la-terraform-kasun"
+    key = "terraform/terraform.tfstate"
+    region = "us-east-2"
+  }
+}
+
 # Deploy storage Resources 
 
 module "storage" {
