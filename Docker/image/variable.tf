@@ -1,4 +1,4 @@
 # Image varibles
-variable "image"{
-    description = "name of the image"
+variable "image" {
+  description = "name of the image"
 }
