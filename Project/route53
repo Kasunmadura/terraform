@@ -1,0 +1,14 @@
+### ec2-user:~/environment/terraform/Project (master) $ aws route53 create-reusable-delegation-set --caller-reference 1224
+{
+    "Location": "https://route53.amazonaws.com/2013-04-01/delegationset/N2BXZ7COIUBN47", 
+    "DelegationSet": {
+        "NameServers": [
+            "ns-1547.awsdns-01.co.uk", 
+            "ns-90.awsdns-11.com", 
+            "ns-1310.awsdns-35.org", 
+            "ns-702.awsdns-23.net"
+        ], 
+        "CallerReference": "1224", 
+        "Id": "/delegationset/N2BXZ7COIUBN47"
+    }
+}
